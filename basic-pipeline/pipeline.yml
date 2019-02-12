@@ -12,5 +12,7 @@ jobs:
   plan:
   - get: first-pipeline
     trigger: true
-  - task: hello-world
+  - task: create-file
     file: first-pipeline/tasks/task_1.yml
+  - task: show-file
+    file: first-pipeline/tasks/task_2.yml

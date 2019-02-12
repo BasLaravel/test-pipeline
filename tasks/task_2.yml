@@ -7,10 +7,8 @@ image_resource:
 
 inputs:  
 - name: first-pipeline
-
-outputs:  
 - name: newfile
 
 run:
-  path: first-pipeline/tasks/makefile.sh
+  path: first-pipeline/tasks/writefile.sh
   
