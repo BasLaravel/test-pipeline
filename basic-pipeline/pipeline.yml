@@ -5,14 +5,21 @@ resources:
   source:
     uri: https://github.com/BasLaravel/test-pipeline.git
     branch: master
+- name: resource-gist
+  type: git
+  source:
+    uri: git@gist.github.com:36fe6898a87ef655dcabdbb8c59f92a7.git
+    branch: master
 
 jobs:
 - name: job-hello-world
   public: true
   plan:
   - get: first-pipeline
-    trigger: true
-  - task: create-file
-    file: first-pipeline/tasks/task_1.yml
-  - task: show-file
-    file: first-pipeline/tasks/task_2.yml
+  - get: resource-gist
+  - task: output-to-gist
+    file: first-pipeline/tasks/task_3.yml
+  # - task: create-file
+  #   file: first-pipeline/tasks/task_1.yml
+  # - task: show-file
+  #   file: first-pipeline/tasks/task_2.yml

@@ -1,0 +1,21 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: starkandwayne/concourse}
+
+inputs:  
+- name: resource-gist
+
+outputs:  
+- name: updated-gist
+
+run:
+  path: resource-gist/tasks/update-resource.sh
+
+- put: resource-gist
+  params:
+    repository: updated-gist
+
+  
