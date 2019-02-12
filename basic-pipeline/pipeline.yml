@@ -8,7 +8,7 @@ resources:
 - name: resource-gist
   type: git
   source:
-    uri: git@gist.github.com:36fe6898a87ef655dcabdbb8c59f92a7.git
+    uri: https://gist.github.com/BasLaravel/36fe6898a87ef655dcabdbb8c59f92a7
     branch: master
 
 jobs:
