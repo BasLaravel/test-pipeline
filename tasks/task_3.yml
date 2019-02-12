@@ -7,6 +7,7 @@ image_resource:
 
 inputs:  
 - name: resource-gist
+- name: first-pipeline
 
 # outputs:  
 # - name: updated-gist

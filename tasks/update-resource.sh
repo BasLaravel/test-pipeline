@@ -2,7 +2,7 @@
 
 ls
 
-cd resource-gist
+# cd resource-gist
 
 ls
 
