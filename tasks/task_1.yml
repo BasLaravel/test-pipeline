@@ -5,6 +5,9 @@ image_resource:
   type: docker-image
   source: {repository: busybox}
 
+inputs:  
+- name: tasks
+
 run:
-  path: resource-tutorial/tasks/test.sh
+  path: ./test.sh
   
