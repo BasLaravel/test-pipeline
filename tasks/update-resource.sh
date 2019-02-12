@@ -16,3 +16,4 @@ git config --global user.name "BasLaravel"
 
 git add .
 git commit -m "Bumped date"
+git push
