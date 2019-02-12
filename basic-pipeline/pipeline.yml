@@ -11,9 +11,7 @@ resources:
     uri: https://gist.github.com/BasLaravel/36fe6898a87ef655dcabdbb8c59f92a7
     branch: master
 
-- put: resource-gist
-  params:
-    repository: updated-gist
+
 
 jobs:
 - name: job-hello-world
@@ -23,6 +21,9 @@ jobs:
   - get: resource-gist
   - task: output-to-gist
     file: first-pipeline/tasks/task_3.yml
+  - put: resource-gist
+    params:
+      repository: updated-gist
   # - task: create-file
   #   file: first-pipeline/tasks/task_1.yml
   # - task: show-file
