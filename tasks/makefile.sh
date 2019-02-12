@@ -1,8 +1,11 @@
 #!/bin/sh
 
 echo "beginning task creating files"
-touch newfile
+ls
+touch ./newfile
+ls
+echo "very important data" >> ./newfile
 
-echo "very important data" >> newfile
+ls
 
 echo "ending script"
