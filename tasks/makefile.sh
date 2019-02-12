@@ -1,10 +1,10 @@
 #!/bin/sh
 
 echo "beginning task creating files"
-mkdir somefiles
-touch ./somefiles/newfile.txt
+cd somefiles
+touch newfile.txt
 ls
-echo "very important data" >> .somefiles/newfile.txt
+echo "very important data" >> newfile.txt
 
 ls
 
