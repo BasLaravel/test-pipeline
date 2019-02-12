@@ -2,4 +2,4 @@
 
 echo "in writefile"
 ls
-cat somefile
+cat somefiles/newfile.txt

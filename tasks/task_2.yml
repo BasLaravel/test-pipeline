@@ -11,4 +11,5 @@ inputs:
 
 run:
   path: first-pipeline/tasks/writefile.sh
+  args: somefiles
   
