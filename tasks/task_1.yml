@@ -6,8 +6,8 @@ image_resource:
   source: {repository: busybox}
 
 inputs:  
-- name: tasks
+- name: resource-tutorial
 
 run:
-  path: ./tasks/test.sh
+  path: resource-tutorial/tasks/test1.sh
   
