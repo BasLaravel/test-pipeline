@@ -11,5 +11,5 @@ jobs:
   public: true
   plan:
   - get: resource-tutorial
-  - task: hello-world
+  - task: task_1
     file: resource-tutorial/tasks/task_1.yml
