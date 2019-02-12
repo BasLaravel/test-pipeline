@@ -14,9 +14,4 @@ outputs:
 
 run:
   path: first-pipeline/tasks/update-resource.sh
-
-- put: resource-gist
-  params:
-    repository: updated-gist
-
   
