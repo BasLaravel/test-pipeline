@@ -11,5 +11,6 @@ jobs:
   public: true
   plan:
   - get: first-pipeline
+    trigger: true
   - task: hello-world
     file: first-pipeline/tasks/task_1.yml
