@@ -8,14 +8,14 @@ image_resource:
 inputs:  
 - name: resource-gist
 
-outputs:  
-- name: updated-gist
+# outputs:  
+# - name: updated-gist
 
 run:
-  path: resource-gist/tasks/update-resource.sh
+  path: first-pipeline/tasks/update-resource.sh
 
-- put: resource-gist
-  params:
-    repository: updated-gist
+# - put: resource-gist
+#   params:
+#     repository: updated-gist
 
   
