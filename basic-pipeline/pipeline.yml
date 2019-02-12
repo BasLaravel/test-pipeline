@@ -11,6 +11,10 @@ resources:
     uri: https://gist.github.com/BasLaravel/36fe6898a87ef655dcabdbb8c59f92a7
     branch: master
 
+- put: resource-gist
+  params:
+    repository: updated-gist
+
 jobs:
 - name: job-hello-world
   public: true
