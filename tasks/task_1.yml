@@ -6,8 +6,8 @@ image_resource:
   source: {repository: busybox}
 
 inputs:  
-- name: resource-tutorial
+- name: first-pipeline
 
 run:
-  path: resource-tutorial/tasks/test1.sh
+  path: first-pipeline/tasks/test1.sh
   
