@@ -9,7 +9,7 @@ inputs:
 - name: first-pipeline
 
 outputs:  
-- name: newfile
+- name: somefiles
 
 run:
   path: first-pipeline/tasks/makefile.sh
