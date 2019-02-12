@@ -1,11 +1,11 @@
 #!/bin/sh
 
 echo "beginning task creating files"
-cd somefiles
-touch newfile.txt
-ls
-echo "very important data" >> newfile.txt
 
-ls
+
+echo 'This is very important data' > somefiles/newfile.txt
+
+
+
 
 echo "ending script"
