@@ -9,14 +9,14 @@ inputs:
 - name: resource-gist
 - name: first-pipeline
 
-# outputs:  
-# - name: updated-gist
+outputs:  
+- name: updated-gist
 
 run:
   path: first-pipeline/tasks/update-resource.sh
 
-# - put: resource-gist
-#   params:
-#     repository: updated-gist
+- put: resource-gist
+  params:
+    repository: updated-gist
 
   

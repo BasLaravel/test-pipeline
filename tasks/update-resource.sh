@@ -1,10 +1,13 @@
 #!/bin/sh
 
 ls
+git clone resource-gist updated-gist
 
-cd resource-gist
+cd updated-gist
 
 ls
+
+cat first-gist
 
 # git clone resource-gist updated-gist
 
@@ -16,3 +19,5 @@ git config --global user.name "BasLaravel"
 
 git add .
 git commit -m "Bumped date"
+
+cat first-gist
